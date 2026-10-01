@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+output.json
+.venv/
+.pytest_cache/
+*.db
+.DS_Store
+.env
+seen_news.db
+tests/
