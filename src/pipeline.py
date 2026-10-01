@@ -119,8 +119,6 @@ class Pipeline:
             filter_seen=filter_seen,
             max_age_minutes=max_age_minutes,
         ) if use_live else []
-        if not items and not use_live:
-            items = DEMO_ITEMS
 
         results = [self.classify_item(i) for i in items]
         should_filter = self.filter_unmatched if filter_unmatched is None else filter_unmatched

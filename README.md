@@ -76,7 +76,7 @@ flowchart TD
 ### 1. Запуск персонального aka Bloomberg-терминала в реальном времени
 
 ```bash
-# Трейдинг-режим Форекс: только свежие валютные молнии за последние 30 минут:
+# Форекс
 python scripts/watch.py --topic forex --max-age 30
 
 # Режим "Чистый старт" (синхронизирует текущую базу и ждет ТОЛЬКО новые релизы в реальном времени):
@@ -96,14 +96,6 @@ python scripts/watch.py --fast --offline --once --topic forex
 
 # Кастомный интервал опроса (например, опрос каждые 15 секунд):
 python scripts/watch.py --interval 15 --limit 10
-```
-
-### 3. Запуск тестов
-
-```bash
-python -m unittest discover tests
-# или при наличии pytest:
-pytest -v
 ```
 
 ---

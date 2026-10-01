@@ -53,16 +53,6 @@ class Translator:
                 return result.strip()
         return None
 
-    def _translate_deep_translator(self, text: str, source: str, target: str) -> Optional[str]:
-        try:
-            from deep_translator import GoogleTranslator
-            res = GoogleTranslator(source=source, target=target).translate(text)
-            if res:
-                return res.strip()
-        except Exception:
-            pass
-        return None
-
     def translate(self, text: str, source_lang: str = "en", target_lang: str = "ru") -> str:
         """Translate text from source_lang to target_lang.
 
