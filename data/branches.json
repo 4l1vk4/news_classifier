@@ -1,0 +1,62 @@
+{
+  "energy": {
+    "ru": "энергетика",
+    "en": "energy",
+    "keywords_ru": ["нефть", "нефтегаз", "газ", "brent", "wti", "опек", "электроэнерг", "аэс", "росатом", "топлив", "нпз", "добыч"],
+    "keywords_en": ["oil", "gas", "brent", "wti", "opec", "power grid", "nuclear", "fuel", "refinery", "upstream", "lng"]
+  },
+  "finance": {
+    "ru": "финансы",
+    "en": "finance",
+    "keywords_ru": ["ставка", "центробанк", "инфляц", "мосбирж", "рубль", "банк", "кредит", "ипотек", "бюджет", "фнб", "валют", "форекс", "евро", "юань", "фрс", "доходност"],
+    "keywords_en": ["fed", "rate hike", "rate cut", "inflation", "s&p", "dow jones", "bank", "credit", "mortgage", "budget", "treasuries", "dollar", "forex", "currency", "fx", "ecb", "central bank", "yield", "bonds"]
+  },
+  "tech": {
+    "ru": "технологии",
+    "en": "tech",
+    "keywords_ru": ["искусственный интеллект", "нейросет", "чип", "полупроводник", "кибер", "софт", "стартап", "spacex"],
+    "keywords_en": ["artificial intelligence", "chip", "semiconductor", "cyber", "software", "startup", "spacex", "nvidia", "openai"]
+  },
+  "agro": {
+    "ru": "агро",
+    "en": "agro",
+    "keywords_ru": ["урожай", "пшениц", "зерн", "удобрен", "агро", "посев"],
+    "keywords_en": ["wheat", "grain", "harvest", "fertilizer", "crop", "agro"]
+  },
+  "logistics": {
+    "ru": "логистика",
+    "en": "logistics",
+    "keywords_ru": ["логистик", "порт", "перевозк", "контейнер", "сбои поставок", "авиакомпан", "ржд", "железная дорога"],
+    "keywords_en": ["logistics", "port", "shipment", "container", "supply chain", "airline", "freight", "rail"]
+  },
+  "defense": {
+    "ru": "оборона",
+    "en": "defense",
+    "keywords_ru": ["оборон", "впк", "ракет", "беспилот", "дрон", "санкци", "армия", "военн"],
+    "keywords_en": ["defense", "missile", "drone", "sanction", "army", "military", "pentagon", "war"]
+  },
+  "pharma": {
+    "ru": "фарма",
+    "en": "pharma",
+    "keywords_ru": ["вакцин", "фарм", "лекарств", "клиническ", "здравоохран"],
+    "keywords_en": ["vaccine", "pharma", "drug", "clinical", "healthcare", "fda"]
+  },
+  "metals": {
+    "ru": "металлы",
+    "en": "metals",
+    "keywords_ru": ["сталь", "никель", "алюминий", "медь", "золото", "уран", "металлург", "палладий"],
+    "keywords_en": ["steel", "nickel", "aluminium", "aluminum", "copper", "gold", "uranium", "metals", "palladium"]
+  },
+  "realty": {
+    "ru": "недвижимость",
+    "en": "real estate",
+    "keywords_ru": ["недвижимост", "ипотек", "застройщик", "жиль", "аренд"],
+    "keywords_en": ["real estate", "mortgage", "housing", "developer", "rent"]
+  },
+  "retail": {
+    "ru": "ритейл",
+    "en": "retail",
+    "keywords_ru": ["ритейл", "розниц", "маркетплейс", "магазин", "потребител"],
+    "keywords_en": ["retail", "consumer", "marketplace", "store", "e-commerce"]
+  }
+}

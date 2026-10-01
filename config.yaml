@@ -1,0 +1,74 @@
+sources:
+  foreign_rss:
+    enabled: true
+    feeds:
+      forexlive: https://www.forexlive.com/feed/news
+      fxstreet: https://www.fxstreet.com/rss/news
+      cnbc_top: https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114
+      cnbc_finance: https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10001147
+      cnbc_tech: https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910
+      bbc_business: http://feeds.bbci.co.uk/news/business/rss.xml
+      bbc_world: http://feeds.bbci.co.uk/news/world/rss.xml
+    lang: en
+
+  bloomberg_rss:
+    enabled: true
+    feeds:
+      - https://www.bloomberg.com/feeds/markets/news.rss
+      - https://www.bloomberg.com/feeds/business/news.rss
+      - https://www.bloomberg.com/feeds/technology/news.rss
+      - https://www.bloomberg.com/feeds/politics/news.rss
+    lang: en
+
+  interfax_rss:
+    enabled: true
+    feeds:
+      - https://www.interfax.ru/rss.asp
+      - https://www.interfax.ru/rss.asp?sec=1464
+    lang: ru
+
+pipeline:
+  branch_threshold: 1      
+  max_branches: 3
+  impact_default: neutral
+  use_transformers: true   
+  branch_min_confidence: 0.35
+
+models:
+  branch_model: "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7"
+  impact_model_en: "ProsusAI/finbert"
+  impact_model_ru: "blanchefort/rubert-base-cased-sentiment"
+
+watcher:
+  poll_interval_seconds: 30       
+  limit_per_source: 10
+  max_age_minutes: 60             
+  clean_start: true            
+  actionable_only: false          
+  sound_alert: false              
+  enable_telegram: false
+
+telegram:
+  bot_token: "${TELEGRAM_BOT_TOKEN}"
+  chat_id: "${TELEGRAM_CHAT_ID}"
+
+# Автоматический перевод иностранных новостей (EN -> RU)
+translation:
+  enabled: true
+  source_lang: en
+  target_lang: ru
+
+
+target_branches: null
+
+branches:
+  - energy
+  - finance
+  - tech
+  - agro
+  - logistics
+  - defense
+  - pharma
+  - metals
+  - realty
+  - retail

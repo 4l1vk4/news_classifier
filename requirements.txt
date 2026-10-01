@@ -1,0 +1,10 @@
+# Core Data Ingestion & Storage
+feedparser>=6.0.10
+pyyaml>=6.0.1
+requests>=2.31.0
+
+torch>=2.2.0
+transformers>=4.40.0
+sentencepiece>=0.2.0
+protobuf>=3.20.0
+
